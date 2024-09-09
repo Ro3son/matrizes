@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrizes</title>
+</head>
+<body>
+    <div class="content">
+        <h1 class="content__title">Matrizes</h1>
+        <p class="content__paragraph">
+            <span class="content__paragraph--bold">Definição: </span>
+            Conjunto de números reais (ou complexos) dispostos em forma de tabela, isto é, distribuídos em
+            <span class="content__paragraph--bold">m</span>
+            linhas e
+            <span class="content__paragraph--bold">n</span>
+            colunas, sendo m e n números naturais não nulos.
+        </p>
+    </div>
+    <main class="main">
+        <div class="main__matrices">
+            <button class="main__button main__button--line">Matriz 1x2</button>
+            <button class="main__button main__button--column">Matriz 2x1</button>
+            <button class="main__button main__button--square">Matriz 2x2</button>
+        </div>
+        <div class="main__form">
+            <form class="form">
+                <div class="form__matrix-a">
+                    <label class="form__label" for="matrix-a">Matriz A</label>
+                    <input class="form__input" type="number" id="matrix-a">
+                </div>
+                <div class="form__matrix-b">
+                    <label class="form__label" for="matrix-b">Matriz B</label>
+                    <input class="form__input" type="number" id="matrix-b">
+                </div>
+            </form>
+        </div>
+        <div class="main__operations">
+            <button class="main__button main__button--add">A+B</button>
+            <button class="main__button main__button--subtract">A-B</button>
+            <button class="main__button main__button--multiply">A*B</button>
+        </div>
+        <div class="main__preformatted-text"></div>
+    </main>
+</body>
+</html>
