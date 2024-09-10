@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matrizes</title>
+    <script src="js/index.js" defer type="module"></script>
 </head>
 <body>
     <div class="content">
@@ -19,26 +20,26 @@
     </div>
     <main class="main">
         <div class="main__matrices">
-            <button class="main__button main__button--line">Matriz 1x2</button>
-            <button class="main__button main__button--column">Matriz 2x1</button>
-            <button class="main__button main__button--square">Matriz 2x2</button>
+            <button class="main__button main__button--line" type="button">Matriz 1x2</button>
+            <button class="main__button main__button--column" type="button">Matriz 2x1</button>
+            <button class="main__button main__button--square" type="button">Matriz 2x2</button>
         </div>
         <div class="main__form">
             <form class="form">
-                <div class="form__matrix-a">
+                <div class="form__matrix">
                     <label class="form__label" for="matrix-a">Matriz A</label>
-                    <input class="form__input" type="number" id="matrix-a">
+                    <input class="form__input-a" type="number">
                 </div>
-                <div class="form__matrix-b">
+                <div class="form__matrix">
                     <label class="form__label" for="matrix-b">Matriz B</label>
-                    <input class="form__input" type="number" id="matrix-b">
+                    <input class="form__input-b" type="number">
                 </div>
             </form>
         </div>
         <div class="main__operations">
-            <button class="main__button main__button--add">A+B</button>
-            <button class="main__button main__button--subtract">A-B</button>
-            <button class="main__button main__button--multiply">A*B</button>
+            <button class="main__button main__button--add" type="button">A+B</button>
+            <button class="main__button main__button--subtract" type="button">A-B</button>
+            <button class="main__button main__button--multiply" type="button">A*B</button>
         </div>
         <div class="main__preformatted-text"></div>
     </main>
