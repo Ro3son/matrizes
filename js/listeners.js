@@ -4,6 +4,8 @@ import { matrix_a11, matrix_b11, matrixInputs } from "./inputs.js";
 const preText = document.getElementsByClassName('main__preformatted-text')[0];
 const preElement = document.createElement('pre');
 
+preElement.setAttribute('class', 'pre-text');
+
 let sum = 0, subt = 0, mult = 0;
 
 function listenerAdd() {
@@ -14,7 +16,9 @@ function listenerAdd() {
         //representação textual das matrizes e da soma
         preElement.textContent = `
             A = [${matrix_a11}]
+
             B = [${matrix_b11}]
+
             A + B = [${matrix_a11} + ${matrix_b11}] = [${sum}]`;
 
         return preText.appendChild(preElement);
@@ -29,7 +33,9 @@ function listenerSubtract() {
 
         preElement.textContent = `
             A = [${matrix_a11}]
+
             B = [${matrix_b11}]
+
             A - B = [${matrix_a11} - ${matrix_b11}] = [${subt}]`;
 
         return preText.appendChild(preElement);
@@ -45,7 +51,9 @@ function listenerMultiply() {
 
         preElement.textContent = `
             A = [${matrix_a11}]
+
             B = [${matrix_b11}]
+            
             A * B = [${matrix_a11} * ${matrix_b11}] = [${mult}]`;
 
         preText.appendChild(preElement);
